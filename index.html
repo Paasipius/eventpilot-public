@@ -4,28 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="EventPilot is a Discord event manager for events, signups, reminders, check-ins, and attendance reports.">
   <title>EventPilot | Discord Event Manager</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #eaf1fa;
       background: #101827;
-      line-height: 1.6;
+      color: #eaf1fa;
+      line-height: 1.7;
     }
+
     header, main, footer {
       max-width: 850px;
       margin: auto;
       padding: 32px 24px;
     }
+
     header {
       text-align: center;
-      padding-top: 75px;
-      padding-bottom: 50px;
+      padding-top: 70px;
+      padding-bottom: 45px;
     }
-    h1 { font-size: 48px; margin-bottom: 0; }
-    h2 { color: #77e1d4; }
-    .tagline { font-size: 22px; color: #adc2db; }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: #77e1d4;
+    }
+
+    p, li {
+      color: #d0dbe8;
+    }
+
+    .tagline {
+      font-size: 22px;
+      color: #adc2db;
+    }
+
+    nav {
+      margin: 25px 0;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 12px;
+    }
+
+    a {
+      color: #77e1d4;
+    }
+
     .card {
       background: #1c2a3c;
       border: 1px solid #31465f;
@@ -33,7 +71,7 @@
       padding: 26px;
       margin-bottom: 22px;
     }
-    a { color: #77e1d4; }
+
     .button {
       display: inline-block;
       background: #77e1d4;
@@ -44,26 +82,54 @@
       padding: 12px 22px;
       margin-top: 12px;
     }
+
+    .legal-links a {
+      display: inline-block;
+      margin: 6px 16px 6px 0;
+    }
+
     footer {
       text-align: center;
       color: #aabbd0;
       font-size: 14px;
     }
+
+    footer a {
+      margin: 0 8px;
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>EventPilot</h1>
-    <p class="tagline">Plan it. Fill it. Track it.</p>
-    <p>Event management made simple for Discord communities.</p>
+
+    <p class="tagline">
+      Plan it. Fill it. Track it.
+    </p>
+
+    <p>
+      Event management made simple for Discord communities.
+    </p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://discord.gg/PapWjaeJNS">Support</a>
+    </nav>
+
     <a class="button" href="https://discord.gg/PapWjaeJNS">
       Join Our Support Server
     </a>
   </header>
 
   <main>
+
     <section class="card">
-      <h2>What is EventPilot?</h2>
+      <h2>What Is EventPilot?</h2>
+
       <p>
         EventPilot is a Discord bot that helps communities
         organize events, manage member signups, send reminders,
@@ -73,50 +139,96 @@
 
     <section class="card">
       <h2>Features</h2>
+
       <ul>
         <li>Create and manage server events</li>
         <li>Join, Maybe, and Leave buttons</li>
         <li>Automatic event reminders</li>
-        <li>Member check-ins</li>
+        <li>Event check-in tracking</li>
         <li>Attendance and no-show reports</li>
-        <li>Persistent event information</li>
+        <li>Saved event and server information</li>
+        <li>Default event channel configuration</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Free Beta</h2>
+      <h2>Currently in Free Beta</h2>
+
       <p>
         EventPilot is currently free to use during beta.
-        Standard beta access supports up to three active
+        Standard beta access allows up to three active
         events per server.
       </p>
+
       <p>
-        There are no required payments or public subscriptions.
-        Voluntary donations may be introduced later to
-        support hosting and future development.
+        There are no required payments or public
+        subscriptions at this time.
+      </p>
+
+      <p>
+        A voluntary support or donation option may
+        be introduced later to help with hosting,
+        maintenance, and future development.
       </p>
     </section>
 
     <section class="card">
-      <h2>Support</h2>
+      <h2>Support and Community</h2>
+
       <p>
-        Need help or want to suggest a feature?
-        Visit our official Discord support community.
+        Need help setting up EventPilot?
+        Found a bug or have a feature suggestion?
       </p>
+
       <p>
-        Support is best-effort, with maintenance generally
+        Visit our official Discord support server.
+      </p>
+
+      <p>
+        Support is provided on a best-effort basis.
+        Development and maintenance are generally
         handled as availability allows.
       </p>
+
       <a class="button" href="https://discord.gg/PapWjaeJNS">
         Get Support
       </a>
     </section>
+
+    <section class="card">
+      <h2>Legal Information</h2>
+
+      <p>
+        Your privacy and understanding of how
+        EventPilot works are important to us.
+      </p>
+
+      <p>
+        Review the following documents for more
+        information about how EventPilot handles
+        information and the conditions for using it.
+      </p>
+
+      <div class="legal-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <p>EventPilot — Plan it. Fill it. Track it.</p>
-    <p>Privacy Policy and Terms of Service will be published
-       before public beta release.</p>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="https://discord.gg/PapWjaeJNS">Support</a>
+    </p>
+
+    <p>EventPilot is currently in free beta.</p>
   </footer>
+
 </body>
 </html>
